@@ -4,7 +4,7 @@ info:
   description: "Displays all storage, memory and network byte values to users in decimal units (KB, MB, GB, TB) instead of Pterodactyl's default binary units (KiB, MiB, GiB, TiB). Admin-side values are untouched and remain in raw MiB."
   flags: ""
   version: "1.0.0"
-  target: "1.14.1"
+  target: "beta-2026-06"
   author: "jw2702"
   icon: ""
   website: "https://github.com/jw2702/pterodactyl-decimalunits"
