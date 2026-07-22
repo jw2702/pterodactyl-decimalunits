@@ -1,0 +1,37 @@
+info:
+  name: "Decimal Units"
+  identifier: "decimalunits"
+  description: "Displays all storage, memory and network byte values to users in decimal units (KB, MB, GB, TB) instead of Pterodactyl's default binary units (KiB, MiB, GiB, TiB). Admin-side values are untouched and remain in raw MiB."
+  flags: ""
+  version: "1.0.0"
+  target: "1.14.1"
+  author: "jw2702"
+  icon: ""
+  website: "https://github.com/jw2702/pterodactyl-decimalunits"
+
+admin:
+  view: "view.blade.php"
+  controller: ""
+  css: ""
+  wrapper: ""
+
+dashboard:
+  css: ""
+  wrapper: ""
+  components: "components"
+
+data:
+  directory: ""
+  public: ""
+  console: ""
+
+requests:
+  views: ""
+  app: ""
+  routers:
+    application: ""
+    client: ""
+    web: ""
+
+database:
+  migrations: ""

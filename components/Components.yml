@@ -1,0 +1,11 @@
+# Learn more about the Components API:
+# https://blueprint.zip/docs/configs/componentsyml
+#
+# Dashboard.Global.BeforeSection is rendered by Pterodactyl's shared
+# PageContentBlock, which every dashboard/account/server page uses.
+# Binding our (invisible) converter here means it mounts on every page
+# without needing a separate binding per page.
+
+Dashboard:
+  Global:
+    BeforeSection: 'elements/DecimalUnitConverter'
