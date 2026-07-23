@@ -15,17 +15,15 @@ Both entry points share the same conversion helpers in [`components/elements/lib
 
 `Components.yml` binds the (invisible) converter component to `Dashboard.Global.BeforeSection`, which is rendered by Pterodactyl's shared `PageContentBlock` — used by every dashboard/account/server page. Binding it here means the converter mounts once and applies everywhere, without needing a separate binding per page.
 
-## Installation (development)
+## Installation
 
-```
-# Enable developer mode in the admin panel under /admin/extensions, then:
-rm -rf /var/www/pterodactyl/.blueprint/dev/\*
-cp -r decimalunits/\* /var/www/pterodactyl/.blueprint/dev/
-cd /var/www/pterodactyl
-blueprint -build
-```
+1. Download the latest `decimalunits.blueprint` file from the
+   [Releases](https://github.com/jw2702/pterodactyl-decimalunits/releases) page.
+2. Upload it to your panel and run:
 
-`.blueprint/dev` is always flat in Blueprint (one extension per dev folder) — the files go directly into it, not into a further `decimalunits/` subfolder.
+   ```bash
+   blueprint -install decimalunits.blueprint
+   ```
 
 ## Uninstallation
 
